@@ -70,3 +70,27 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+// Task 1
+console.log("========TASK 1========");
+var {firstName, lastName, house, pet, occupation} = hogwarts;
+hogwarts.forEach(element => {
+    let fName = element.firstName;
+    let lName = element.lastName;
+    let gHouse = element.house;
+    if(gHouse === "Gryffindor") {
+        console.log(fName, lName);
+    }
+});
+
+//Task 2
+console.log("\n========TASK 2========");
+hogwarts.forEach(element => {
+    let fName = element.firstName;
+    let lName = element.lastName;
+    let petEl = element.pet;
+    let occupationEl = element.occupation;
+    if(petEl && occupationEl === "Teacher" ) {
+        console.log(fName, lName);
+    }
+});
